@@ -1,29 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    footer {
-        text-align: center;
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Simple Podcast Page">
     <meta name="keywords" content="A Simple Podcast Page">
-    <meta name="author" content="Kofoworola"
+    <meta name="author" content="Kofoworola">
     <link rel="shortcut icon" href="./images/Dreamsom_logo-removebg-preview.png" type="image/x-icon">
     <title>A Simple Podcast Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .video-player {
+            width: 700px;
+            height: 400px;
+            float: left;
+        }
+
+        .audio-list {
+            width: 300px;
+            height: 400px;
+            float: right;
+            overflow-y: auto;
+        }
+
+        .audio-item {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <header></header>
     <main>
 
+        <section class="container">
+            <div class="video-player">
+                <video controls>
+                    <source src="./Resources/podcast.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
         <section>
-            <form>
+            <div class="audio-list">
 
-            </form>
+                <audio controls>
+                    <source src="./Resources/audio/audio1.mp3" type="audio/mpeg">
+                </audio>
+
+                <audio controls>
+                    <source src="./Resources/audio/audio2.mp3" type="audio/mpeg">
+                </audio>
+
+                <audio controls>
+                    <source src="./Resources/audio/audio3.mp3" type="audio/mpeg">
+                </audio>
+
+                <audio controls>
+                    <source src="./Resources/audio/audio4.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls>
+                    <source src="./Resources/audio/audio5.mp3" type="audio/mpeg">
+                </audio>
+
+                <audio controls>
+                    <source src="./Resources/audio/audio6.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+
         </section>
     </main>
     <footer class="footer" backgroundcolor="red">
